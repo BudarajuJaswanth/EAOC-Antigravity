@@ -1,0 +1,8 @@
+# Dockerfile.worker — EAOC LangGraph Worker Process Placeholder
+# Phase 1 · Part 1.1 Structural Placeholder
+
+FROM python:3.12-slim-bookworm
+
+WORKDIR /app
+
+# Dependency installation & worker entrypoint will be configured in subsequent Phase 1 sub-parts

@@ -1,0 +1,8 @@
+# Dockerfile.api — EAOC FastAPI API Service Placeholder
+# Phase 1 · Part 1.1 Structural Placeholder
+
+FROM python:3.12-slim-bookworm
+
+WORKDIR /app
+
+# Dependency installation & app entrypoint will be configured in subsequent Phase 1 sub-parts
