@@ -7,11 +7,17 @@ The **Enterprise AI Operations Center (EAOC)** is a research-oriented, adaptive 
 
 ## Current Status & Roadmap
 
-* **Current Phase**: **Phase 1 — Core Foundation & Setup**
-* **Current Part**: **Part 1.1 — Repository & Project Structure**
 * **Phase 0 Status**: **APPROVED ✅ · GATE 0 PASSED · LOCKED 🔒**
-
-> ⚠️ **IMPORTANT NOTICE**: At Part 1.1, all package directories under `src/eaoc/` serve as **STRUCTURAL PLACEHOLDERS ONLY**. Agents, LLM connections, LangGraph state graphs, PostgreSQL/Redis bindings, security interceptors, and business logic are NOT yet implemented and will be added incrementally in subsequent Phase 1 sub-parts.
+* **Phase 1 Status**: **APPROVED ✅ · COMPLETED & LOCKED 🔒**
+* **Phase 2 Status**: **IN PROGRESS**
+  * **Part 2.16-C**: **ACCEPTED & LOCKED 🔒 (WITH LIMITATIONS)**
+    * **Test Verification**: 356 unit/hermetic tests passing.
+    * **Recorded Limitations**:
+      1. Live PostgreSQL row-locking and multi-connection concurrency are not yet verified.
+      2. Physical database idempotency-constraint races are not yet verified.
+      3. Migration 0003 upgrade/downgrade has not been executed against a dedicated PostgreSQL test database.
+      4. Production database migration and deployment are not authorized by this gate decision.
+      5. Exactly-once external side effects are not guaranteed.
 
 ---
 

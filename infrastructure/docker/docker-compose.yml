@@ -1,6 +1,5 @@
-# EAOC Docker Compose Specification Placeholder
-# Phase 1 · Part 1.1 Structural Placeholder
-# (Full deployment environment setup scheduled for later Phase 1 parts)
+# EAOC Docker Compose Specification
+# Local Development Infrastructure Services
 
 version: "3.8"
 
@@ -14,4 +13,13 @@ volumes:
   ollama_models:
 
 services:
-  # Placeholder service definitions will be activated in Phase 1 infrastructure setup
+  redis:
+    image: redis:7-alpine
+    container_name: eaoc-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - eaoc-internal
+    restart: unless-stopped
